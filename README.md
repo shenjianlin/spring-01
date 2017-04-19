@@ -44,3 +44,16 @@
         <property name="mapperLocations" value="classpath:mapper/*.xml"/>
         <!--<property name="mapperLocations" value="classpath:com/spring/mapper/*Mapper.xml"/>-->
     </bean>
+
+3.测试类中
+
+@Test
+    public void testSelectAll(){
+        //获取第1页，2条内容，默认查询总数count
+        PageHelper.startPage(1,2);
+        //紧跟着的第一个select方法会被分页
+        List<UserDo>  list= userDoMapper.selectAll();
+
+        log.info("影响的行 {}",list);
+    }
+}
