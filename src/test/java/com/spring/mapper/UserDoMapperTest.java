@@ -1,11 +1,14 @@
 package com.spring.mapper;
 
+import com.github.pagehelper.PageHelper;
 import com.spring.domain.UserDo;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+
+import java.util.List;
 
 import static org.junit.Assert.*;
 
@@ -59,4 +62,13 @@ public class UserDoMapperTest extends BaseSpringTest {
         log.info("影响的行数 ：{}", res);
     }
 
+    @Test
+    public void testSelectAll(){
+        //获取第1页，2条内容，默认查询总数count
+        PageHelper.startPage(1,2);
+        //紧跟着的第一个select方法会被分页
+        List<UserDo>  list= userDoMapper.selectAll();
+
+        log.info("影响的行 {}",list);
+    }
 }
