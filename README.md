@@ -12,7 +12,7 @@
 
 实现了分页单表的分页
 
-1.在pom 里配置依赖
+(1).在pom 里配置依赖
 
         <!--分页插件-->
         <dependency>
@@ -21,7 +21,7 @@
             <version>5.0.0</version>
         </dependency>
 
-2.在applicationContext.xml 里配置映射
+(2).在applicationContext.xml 里配置映射
 
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
@@ -45,7 +45,7 @@
         <!--<property name="mapperLocations" value="classpath:com/spring/mapper/*Mapper.xml"/>-->
     </bean>
 
-3.测试类中
+（3）.测试类中
 
 @Test
     public void testSelectAll(){
