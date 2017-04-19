@@ -1,9 +1,9 @@
-# spring µÄÏîÄ¿¹¹½¨
+# spring çš„é¡¹ç›®æ„å»º
 
-¶¯Ì¬Éú³ÉÊı¾İÖĞµÄÎÄ¼ş domain ºÍ  mapper
+åŠ¨æ€ç”Ÿæˆæ•°æ®ä¸­çš„æ–‡ä»¶ domain å’Œ  mapper
 
-ºÍresources ÏÂµÄmappeµÄxmlÎÄ¼ş
+å’Œresources ä¸‹çš„mappeçš„xmlæ–‡ä»¶
 
-µ¥±íµÄ Ôö É¾ ¸Ä ²é
+å•è¡¨çš„ å¢ åˆ  æ”¹ æŸ¥
 
-1.tag1 £º ÔöÉ¾¸Ä²é tag-name =v1.0
+1.tag1 ï¼š å¢åˆ æ”¹æŸ¥ tag-name =v1.0
